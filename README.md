@@ -4,6 +4,8 @@
 
 This project focuses on building a machine learning pipeline to classify cybersecurity alerts using a combination of BERT transformer-based embeddings and XGBoost. The model leverages domain-adaptive pretraining (DAPT) of BERT fine-tuned on cybersecurity alert data, combined with engineered categorical features and feature selection.
 
+Cybersecurity datasets often contain a large number of features and may include missing values that shouldn't be discarded outright. XGBoost is well-equipped to handle such scenarios, as it can manage missing data effectively. During training, it learns the optimal direction (left or right) for instances with missing values at each decision split, enabling the model to utilize incomplete data without compromising performance.
+
 ### **Features / Data Structure**
 
 **The input data contains the following features: (These fields are just for example. If you have more data, please train on that as well.)** 
