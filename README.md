@@ -13,6 +13,7 @@ The pipeline integrates:
     - XGBoost to handle high-dimensional input and missing values.
 
 Why XGBoost?
+
 Cybersecurity datasets often have noisy, incomplete, and feature-rich data. XGBoost is designed to handle such complexity—during training, it automatically learns the optimal path for instances with missing values at each decision node, allowing the model to make informed predictions even when some data is absent.
 
 ### **Features / Data Structure**
@@ -107,6 +108,7 @@ If you have two datasets:
 - One with target labels (labeled)
 
 We recommend:
+
 - Pre-training the BERT (DAPT) model on the unlabeled dataset to adapt the transformer to the cybersecurity domain.
 - Fine-tuning the adapted BERT model on the labeled dataset for the final classification task using XGBoost.
 
