@@ -94,16 +94,12 @@ You should provide a dataset with raw security alert text (e.g., from XDR/SOAR/S
 ### Model Training Strategy
 
 If you have two datasets:
-
-    One without target labels (unlabeled)
-
-    One with target labels (labeled)
+- One without target labels (unlabeled)
+- One with target labels (labeled)
 
 We recommend:
-
-    Pre-training the BERT (DAPT) model on the unlabeled dataset to adapt the transformer to the cybersecurity domain.
-
-    Fine-tuning the adapted BERT model on the labeled dataset for the final classification task using XGBoost.
+- Pre-training the BERT (DAPT) model on the unlabeled dataset to adapt the transformer to the cybersecurity domain.
+- Fine-tuning the adapted BERT model on the labeled dataset for the final classification task using XGBoost.
 
 This approach helps the BERT model learn the language and structure of cybersecurity data, improving performance during training and testing phases.
 
